@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out"
+
+        />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/round_share_24"
+        android:title="Share"
+
+        />
+
+    <item
+        android:id="@+id/rateus"
+        android:icon="@drawable/baseline_star_border_24"
+        android:title="Rate us"
+
+        />
+
+
+
+    <item
+            android:id="@+id/update"
+            android:icon="@drawable/ic_update"
+            android:title="Update"
+
+            />
+    <item
+        android:id="@+id/moreapp"
+        android:icon="@drawable/baseline_apps_24"
+        android:title="More app"
+
+        />
+
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/faq"-->
+<!--            android:icon="@drawable/ic_question"-->
+<!--            android:title="FQA"-->
+
+<!--            />-->
+
+
+<!--        <item-->
+<!--            android:id="@+id/feedback"-->
+<!--            android:icon="@drawable/ic_feedback"-->
+<!--            android:title="Feedback"-->
+
+<!--            />-->
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/Info"-->
+<!--            android:icon="@drawable/ic_info"-->
+<!--            android:title="Info"-->
+
+<!--            />-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

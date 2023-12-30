@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PetDiary" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/my_primary</item>
+
+        <!--        <item name="android:statusBarColor">@color/black</item>-->
+<!--        <item name="android:statusBarColor">#1A000000</item>-->
+<!--        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>-->
+
+    </style>
+
+    <style name="Theme.PetDiary" parent="Base.Theme.PetDiary" />
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pet Diary</string>
+    <string name="appPackageName">com.example.petdiary</string>
+    <string name="create_pet_profile">Create pet profile</string>
+    <string name="save">Save Info</string>
+    <string name="name">Name</string>
+    <string name="welcome_text">We\'re thrilled to have you on board. Whether you\'re a dedicated pet owner or an animal enthusiast, this app is your companion in keeping track of your furry friend\'s daily adventures, health, and memorable moments.\n\nGet ready to embark on a delightful journey with your beloved pet. Let\'s create beautiful memories together!</string>
+</resources>

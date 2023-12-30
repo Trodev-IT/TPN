@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trodev.petdiary.activity.SignUp">
+
+    <ImageView
+        android:id="@+id/wav"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/wave"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pet" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo"
+            android:fontFamily="@font/helvetica_neue_medium_cond"
+            android:paddingStart="5dp"
+            android:text="Tro Pet Notes"
+            android:textColor="@color/my_primary"
+            android:textSize="30sp"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/helvetica_neue_medium_cond"
+        android:text="Welcome! Let's get started"
+        android:textSize="18sp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wav">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="0dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextAppearance="@color/design_default_color_error"
+                app:helperTextTextColor="@color/green"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="40dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Email"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextAppearance="@color/design_default_color_error"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="40dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Password"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextAppearance="@color/design_default_color_error"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:inputType="textPassword"
+                    android:outlineAmbientShadowColor="@color/green"
+
+                    android:paddingEnd="40dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmPassContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Confirm Password"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextAppearance="@color/design_default_color_error"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:inputType="textPassword"
+                    android:outlineAmbientShadowColor="@color/green"
+                    android:paddingEnd="40dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:text="By signing up you agree to our" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Terms, Privacy Policy"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/B_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/my_primary"
+                android:fontFamily="@font/helvetica_neue_medium_cond"
+                android:text="Register"
+                android:textSize="17sp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:text="Already hava an account?" />
+
+                <TextView
+                    android:id="@+id/bottomSignin_Txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/helvetica_neue_medium_cond"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Sign In"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:gravity="center"-->
+            <!--                >-->
+
+            <!--                &lt;!&ndash;=========== 01 =====start===================================== &ndash;&gt;-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+
+            <!--                    android:layout_marginEnd="30dp"-->
+            <!--                    >-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="30dp"-->
+            <!--                        android:layout_height="30dp"-->
+            <!--                        android:src="@drawable/google_logo"-->
+
+            <!--                        />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Google"-->
+
+            <!--                        />-->
+
+
+            <!--                </LinearLayout>-->
+
+            <!--                &lt;!&ndash;=========== 01 =====end===================================== &ndash;&gt;-->
+
+
+            <!--                &lt;!&ndash;=========== 02 =====start===================================== &ndash;&gt;-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+
+            <!--                    >-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="30dp"-->
+            <!--                        android:layout_height="30dp"-->
+            <!--                        android:src="@drawable/facebook_logo"-->
+
+            <!--                        />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Facebook"-->
+
+            <!--                        />-->
+
+
+            <!--                </LinearLayout>-->
+
+            <!--                &lt;!&ndash;=========== 02 =====end===================================== &ndash;&gt;-->
+
+
+            <!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
