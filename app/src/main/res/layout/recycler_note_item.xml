@@ -20,10 +20,11 @@
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginTop="7dp"
-            android:src="@drawable/ic_pet_profile" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/pet_profile_icon" />
 
         <LinearLayout
             android:id="@+id/layout"

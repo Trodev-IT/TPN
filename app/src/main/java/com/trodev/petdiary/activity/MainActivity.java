@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
     private final static float CLICK_DRAG_TOLERANCE = 10;
     RecyclerView recyclerView;
     RelativeLayout NoDataFoundLayout;
-
     private List<Note> noteList;
     private NotesAdapter notesAdapter;
     private FirebaseAuth firebaseAuth;

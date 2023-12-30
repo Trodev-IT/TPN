@@ -29,7 +29,7 @@
             android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            android:src="@drawable/pet" />
+            android:src="@drawable/pet_apps_icon" />
 
         <TextView
             android:id="@+id/t1"
@@ -250,7 +250,7 @@
                     android:fontFamily="@font/helvetica_neue_medium_cond"
                     android:foreground="?attr/selectableItemBackground"
                     android:text="Sign In"
-                    android:textColor="@color/dark_blue"
+                    android:textColor="@color/my_primary"
                     android:textStyle="bold" />
 
             </LinearLayout>
